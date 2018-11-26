@@ -7,14 +7,14 @@ A Tool to read or modify object_json file according to key.
 install through npm or yarn
 
 ```
-  npm install json-object-file
-  // yarn add json-object-file
+  npm install object-json-file
+  // yarn add object-json-file
 ```
 
 #### API
 
 ```javascript
-  import JsonFileUtil from 'json-object-file';
+  import JsonFileUtil from 'object-json-file';
   const jsonUtil = new JsonFileUtil({
     cache: true,
     filePath: 'path-to-json-file',
