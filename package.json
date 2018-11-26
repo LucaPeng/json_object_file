@@ -1,5 +1,5 @@
 {
-  "name": "json_object_file",
+  "name": "json-object-file",
   "version": "0.0.1",
   "description": "A Tool to read or modify object_json file according to key.",
   "license": "MIT",
