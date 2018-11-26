@@ -4,23 +4,25 @@
   "description": "A Tool to read or modify object_json file according to key.",
   "license": "MIT",
   "author": "songpeng <little.dreaming.bear@gmail.com> ()",
-  "keywords": ["jsonfile","modify"],
+  "keywords": [
+    "jsonfile",
+    "modify"
+  ],
   "main": "scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "files": [
-    "bin/",
     "scripts/",
     "index.d.ts",
     "README.md"
   ],
-  "bin": {
-    "json_object_file": "bin/index.js"
-  },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "typescript": "^3.1.6"
+  },
   "peerDependencies": {},
   "optionalDependencies": {},
   "homepage": "https://github.com/LucaPeng/json_object_file.git-json_object_file",
