@@ -7,10 +7,22 @@ A Tool to read or modify object_json file according to key.
 install through npm or yarn
 
 ```
-  npm install json_object_file
-  // yarn add json_object_file
+  npm install json-object-file
+  // yarn add json-object-file
 ```
 
 #### API
 
-#### CLI
+```javascript
+  import JsonFileUtil from 'json-object-file';
+  const jsonUtil = new JsonFileUtil({
+    cache: true,
+    filePath: 'path-to-json-file',
+  });
+  console.log(jsonUtil.getJSON());
+  jsonUtil.modifyJSON({
+    test: 'aaa'
+  });
+  // 如果使用 cache 模式，请在执行对json文件有改动的操作(基于modifyJSON 方法除外) 需要清除缓存
+  jsonUtil.clearCache();
+```
